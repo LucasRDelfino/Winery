@@ -1,5 +1,8 @@
 package br.com.fiap.winery;
 
+import br.com.fiap.stub_classes.WineStockService;
+import br.com.fiap.stub_classes.WineWarningService;
+
 import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
 import java.net.MalformedURLException;
@@ -15,7 +18,7 @@ public class ApplicationClient2 {
 
             Service service = Service.create(url, qName);
 
-            WineStockService wineStockService = service.getPort(WineStockService.class);
+             WineStockService wineStockService = service.getPort(WineStockService.class);
 
             String wineName = "Merlot";
             int quantity = 3;

@@ -1,6 +1,7 @@
 package br.com.fiap.winery;
 
 
+import br.com.fiap.stub_classes.WineStockService;
 import jakarta.xml.ws.Service;
 
 import javax.xml.namespace.QName;
@@ -24,7 +25,6 @@ public class ApplicationClient1 {
 
 			System.out.println(menu);
 		} catch (MalformedURLException e) {
-			// Tratamento de exceção para URL mal formada
 			e.printStackTrace();
 		}
 	}
